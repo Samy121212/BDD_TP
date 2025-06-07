@@ -28,6 +28,7 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
+/* Ce trigger empêche qu’une réservation dépasse les dates de disponibilité du matériel, et qu’un utilisateur réserve du matériel qui n’est pas celui référencé dans Disponibilite.*/
 CREATE TRIGGER trigger_verifier_disponibilite
 BEFORE INSERT OR UPDATE ON Reservation
 FOR EACH ROW
