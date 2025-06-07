@@ -23,7 +23,7 @@ ORDER BY
     r.date_deb
 LIMIT 50;
 
--- les causes de ralentissement sont les suivantes : 1-Manque d’index sur : Reservation.id_utilisateur, Reservation.id_materiel, Reservation.id_disponibilite
+/* les causes de ralentissement sont les suivantes : 1-Manque d’index sur : Reservation.id_utilisateur, Reservation.id_materiel, Reservation.id_disponibilite
 Reservation.date_deb
 2-Tables volumineuses sans condition de filtrage (WHERE), donc tout est lu.
-3-Jointures multiples sans optimisation : si les tables ne sont pas indexées sur les colonnes de jointure, chaque JOIN peut devenir très coûteux.
+3-Jointures multiples sans optimisation : si les tables ne sont pas indexées sur les colonnes de jointure, chaque JOIN peut devenir très coûteux.*/
