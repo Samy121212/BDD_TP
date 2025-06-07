@@ -8,11 +8,11 @@ SELECT
     m.id_materiel,
     m.mobilier,
     m.informatique,
-    d.date_debut AS date_disponible_debut,
-    d.date_fin AS date_disponible_fin,
+    d.date_debut AS date_debut,
+    d.date_fin AS date_fin,
     r.id_reservation,
-    r.date_deb AS date_reservation_debut,
-    r.date_fin AS date_reservation_fin,
+    r.date_deb AS date_debut,
+    r.date_fin AS date_fin,
     r.date_retour_effectif
 FROM 
     Reservation r
